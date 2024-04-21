@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-main {
+    @apply text-3xl bg-white text-gray-900 h-20 w-screen flex items-center justify-between shadow-lg
+}
+.nav-data {
+    @apply mx-6 w-full flex justify-between
+}
+
+.links {
+    @apply flex items-center gap-1 
+}
+.footer-main {
+    @apply bg-slate-900 w-screen p-6 absolute bottom-0
+}
+.footer-data {
+    @apply flex text-white justify-between mx-6 items-center
+}
+.link-section {
+    @apply flex gap-2 text-xl items-start
+}
