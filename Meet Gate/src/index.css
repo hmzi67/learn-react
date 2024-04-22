@@ -13,7 +13,7 @@
     @apply flex items-center gap-1 
 }
 .footer-main {
-    @apply bg-slate-900 w-screen p-6 absolute bottom-0
+    @apply bg-slate-900 w-screen p-6 relative bottom-0
 }
 .footer-data {
     @apply flex text-white justify-between mx-6 items-center
