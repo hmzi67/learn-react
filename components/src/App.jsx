@@ -1,15 +1,22 @@
-import { useState } from "react";
+
 import "./App.css";
-import Notification from "./components/Notification";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SignUpPage from "./pages/SignUpPage";
+import Home from "./pages/Home";
+
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
-    <main className="flex items-center h-screen w-screen justify-center">
-      <Notification/>
+    <main className="flex flex-col gap-4 bg-slate-300 items-center h-screen w-screen justify-center">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/signup" element={<SignUpPage/>} />
+        </Routes>
+      </BrowserRouter>
     </main>
-  )
+  );
 }
 
 export default App;
